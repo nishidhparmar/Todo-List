@@ -10,6 +10,7 @@ app.use(bodyparser.urlencoded({ extended: true }));
 app.use(express.static(staticpath));
 
 app.set('view engine', 'ejs');
+// mongoose.connect("mongodb://localhost/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
 mongoose.connect("mongodb+srv://nishidh_parmar:7w0llnFAq7KNpTwP@nishidh.v7afn.mongodb.net/todolistDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
